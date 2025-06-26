@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders - ShroomHaws</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <i class="fas fa-mushroom"></i>
+                <span>ShroomHaws</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Shop</a></li>
+                    <li><a href="cart.html" class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a></li>
+                    <li><a href="my-orders.html" class="active">My Orders</a></li>
+                    <li><a href="login-signup.html" id="auth-link">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- My Orders Page -->
+    <div class="order-container">
+        <h2 class="section-title">My Orders</h2>
+        <div id="orders-container">
+            <!-- Orders will be dynamically added here -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div>
+                <div class="footer-logo">
+                    <i class="fas fa-mushroom"></i>
+                    ShroomHaws
+                </div>
+                <p>Premium quality mushrooms sustainably grown and delivered fresh to your doorstep.</p>
+            </div>
+            
+            <div>
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#products">Products</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="my-orders.html">My Orders</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="footer-heading">Contact Us</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-envelope"></i> support@shroomhaws.com</li>
+                    <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Mushroom Valley, CA 90210</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2023 ShroomHaws. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Support Chat -->
+    <div class="chat-bubble" id="chat-bubble">
+        <i class="fas fa-comment-dots"></i>
+    </div>
+    
+    <div class="chat-box" id="chat-box">
+        <div class="chat-header">
+            <h3>Customer Support</h3>
+            <button class="chat-close" id="chat-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="chat-body">
+            <form id="support-form">
+                <div class="form-group">
+                    <label for="support-name">Your Name</label>
+                    <input type="text" id="support-name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="support-email">Email Address</label>
+                    <input type="email" id="support-email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="support-message">Message</label>
+                    <textarea id="support-message" class="form-control" rows="4" required placeholder="How can we help you?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-accent" style="width: 100%; padding: 1.1rem;">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
